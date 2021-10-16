@@ -1,0 +1,154 @@
+<form [formGroup]="studentForm" (ngSubmit)="save()">
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="surname">Фамилия</label>
+        <input
+        type="text"
+        class="form-control"
+        id="surname"
+        placeholder="Фамилия"
+        formControlName="surname"
+        [ngClass]="{
+          'har-error':
+          studentForm.get('surname')?.invalid &&
+          studentForm.get('surname')?.touched
+        }"
+        />
+        <small class="form-text text-muted">Обязательное поле</small>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="name">Имя</label>
+        <input
+        type="text"
+        class="form-control"
+        id="name"
+        placeholder="Имя"
+        formControlName="name"
+        [ngClass]="{
+          'har-error':
+          studentForm.get('name')?.invalid &&
+          studentForm.get('name')?.touched
+        }"
+        />
+        <small class="form-text text-muted">Обязательное поле</small>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="patronymic">Отчество</label>
+        <input
+        type="text"
+        class="form-control"
+        id="patronymic"
+        placeholder="Отчество"
+        formControlName="patronymic"
+        />
+        <small class="form-text text-muted">Необязательное поле</small>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="phone">Телефон</label>
+        <input
+        type="text"
+        class="form-control"
+        id="phone"
+        placeholder="Телефон"
+        formControlName="phone"
+        [ngClass]="{
+          'har-error':
+          studentForm.get('phone')?.invalid &&
+          studentForm.get('phone')?.touched
+        }"
+        />
+        <small class="form-text text-muted">Обязательное поле</small>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="email">Электронная почта</label>
+        <input
+        type="text"
+        class="form-control"
+        id="email"
+        placeholder="Электронная почта"
+        formControlName="email"
+        [ngClass]="{
+          'har-error':
+          studentForm.get('email')?.invalid &&
+          studentForm.get('email')?.touched
+        }"
+        />
+        <small class="form-text text-muted">Дата рождения</small>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="birth">Дата рождения</label>
+        <input
+        type="text"
+        class="form-control"
+        id="birth"
+        placeholder="Дата рождения"
+        formControlName="birth"
+        [ngClass]="{
+          'har-error':
+          studentForm.get('birth')?.invalid &&
+          studentForm.get('birth')?.touched
+        }"
+        />
+        <small class="form-text text-muted">Обязательное поле</small>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="group">Учебная группа</label>
+        <input
+        type="text"
+        class="form-control"
+        id="group"
+        placeholder="Учебная группа"
+        formControlName="group"
+        [ngClass]="{
+          'har-error':
+          studentForm.get('group')?.invalid &&
+          studentForm.get('group')?.touched
+        }"
+        />
+        <small class="form-text text-muted">Обязательное поле</small>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="form-group">
+        <label for="direction">Направление подготовки</label>
+        <input
+        type="text"
+        class="form-control"
+        id="direction"
+        placeholder="Направление подготовки"
+        formControlName="direction"
+        [ngClass]="{
+          'har-error':
+          studentForm.get('direction')?.invalid &&
+          studentForm.get('direction')?.touched
+        }"
+        />
+        <small class="form-text text-muted">Обязательное поле</small>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" [disabled]="studentForm.invalid">Сохранить</button>
+        <button type="submit" class="btn btn-danger ms-2" [disabled]="studentForm.invalid" *ngIf="id" (click)="delete()">Удалить</button>
+    </div>
+  </div>

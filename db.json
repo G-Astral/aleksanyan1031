@@ -1,0 +1,48 @@
+{
+  "student": [
+    {
+      "surname": "Алексанян",
+      "name": "Гарник",
+      "patronymic": "Мгерович",
+      "phone": "89851377454",
+      "email": "super.anakonda2001@yandex.ru",
+      "birth": "22.09.2001",
+      "group": "191-324",
+      "direction": "САПР",
+      "id": 1
+    },
+    {
+      "surname": "Выар",
+      "name": "ывар",
+      "patronymic": "ыавр",
+      "phone": "7856",
+      "email": "рол",
+      "birth": "856",
+      "group": "191-323",
+      "direction": "САПР",
+      "id": 2
+    },
+    {
+      "surname": "Фвар",
+      "name": "фывп",
+      "patronymic": "фывп",
+      "phone": "78452",
+      "email": "лгорке",
+      "birth": "8754",
+      "group": "191-321",
+      "direction": "Веб",
+      "id": 3
+    },
+    {
+      "surname": "Капрол",
+      "name": "нрепрка",
+      "patronymic": "енкоура",
+      "phone": "87452",
+      "email": "укпеавы",
+      "birth": "6534",
+      "group": "191-322",
+      "direction": "Веб",
+      "id": 4
+    }
+  ]
+}
