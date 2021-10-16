@@ -26,8 +26,6 @@ export class StudentListComponent implements OnInit {
     }
   }
   sortDataBy(array:Student[]){
-    console.log(this.sortSelected);
-    console.log(array);
     if(this.sortingInput!=""&&array.length>0){
       switch(this.sortSelected){
         case "surname":
